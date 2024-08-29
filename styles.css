@@ -1,0 +1,122 @@
+/* styles.css */
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    padding: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+    width: 160px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 0;
+    color: #af5f5f; /* Keep the color for "WE'RE" */
+    font-weight: 300;
+}
+
+/* Additional CSS for black text */
+.black-text {
+    color: #000; /* Black color for "COMING SOON" */
+    font-weight: 600; /* Ensures that the black text is bold */
+}
+
+p {
+    margin: 20px 0;
+    color: #b8a398;
+    font-size: 18px;
+}
+
+.email-form {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns all elements to the start (left) */
+}
+
+.email-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #b8a398;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px; /* Adds spacing between the input and button */
+}
+
+.email-form button {
+    height: 45px;
+    width: 45px;
+    background-color: #f56271;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end; /* Aligns the button to the end (right) */
+}
+
+.email-form button img {
+    width: 20px;
+    height: 20px;
+}
+
+.error-message {
+    display: none;
+    color: #f56271;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.email-form input:invalid + .error-message {
+    display: block;
+}
+
+.right-section {
+    width: 50%; /* Make the right section always match the left section */
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
